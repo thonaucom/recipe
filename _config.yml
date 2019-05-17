@@ -1,0 +1,20 @@
+# Site settings
+title: Yenlanh.com Receipts and Thai Binh Food
+email: info@yenlanh.com
+description: Chuyên trang tổng hợp món ăn và công thức nấu ăn của yenlanh.com
+baseurl: ""
+twitter_username: yenlanh
+github_username:  yenlanh
+
+# Build settings
+markdown: kramdown
+
+permalink: /:title:output_ext
+
+collections:
+  components:
+    output: true
+  recipes:
+    output: true
+
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']

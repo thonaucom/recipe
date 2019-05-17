@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<div class="home"> 
+
+  <div class="recipes xs-px1 xs-mt2">
+    <div class="clearfix">
+    {% assign sorted = site.recipes | sort:"date" %}
+    {% for post in sorted %}
+
+      <div class="sm-col sm-col-6 md-col-6 lg-col-4 xs-px1 xs-mb2">
+          <a class="block relative bg-blue" href="{{ post.url | prepend: site.baseurl }}">
+            <div class="image ratio bg-cover"{% for image in post.image %} style="background-image:url({{site.baseurl}}/images/{{ image }});"{% endfor %}></div>
+            <h1 class="title p2 m0 absolute bold white bottom-0 left-0">{{ post.title }}</h1>
+          </a>
+      </div>
+    {% endfor %}
+  </div>
+  </div>
+  
+  <div class="sell bg-blue-tile mt4">
+    <div class="clearfix white px2">
+      <div class="sm-col md-col-6 px2 md-px4 py2 md-py4">
+        <h1>Bản quyền phát triển</h1>
+        <p>Bản quyền thuộc về yenlanh.com và các bên liên quan.</p>
+        <p>Phát triển, cập nhật và bảo trì bởi Phạm Xuân Tiếp</p>
+        <p>Được tài trợ vận hành và phát triển từ nguồn vốn của <a href="https://www.yenlanh.com/" target="_blank">Yenlanh.com</a>)</p>
+        <p>Trao đổi liên lạc với bên phát triển (<a href="https://facebook.com/100035563570550">Facebook Phạm Xuân Tiếp</a>)</p>
+      </div>
+      <div class="sm-col md-col-6 px2 md-px4 py2 md-py4">
+        <h1>Ecommerce</h1>
+        <p>Với công nghệ react.js và meteor.js</p>
+        <p>Tăng tốc độ xử lý tại máy khách hàng</p>
+        <p>Thời gian xử lý cao, hiệu quả bán hàng (<a href="https://yenlanh.com">để tìm hiểu thêm</a>)</p>
+        <p>Hoặc làm việc với tôi qua Facebook <a href="https://facebook.com/100035563570550">Phạm Xuân Tiếp</a> người phát triển chính.</p>
+      </div>
+    </div>
+    <div class="clearfix white center">
+      <a href="https://yenlanh.com" class="button button-big button-with-icon button-outline mb4 h2">
+            <svg class="js-geomicon geomicon" width="30" data-icon="github" viewBox="0 0 32 32" style="fill:currentcolor"><title>github icon</title><path d="M0 18 C0 12 3 10 3 9 C2.5 7 2.5 4 3 3 C6 3 9 5 10 6 C12 5 14 5 16 5 C18 5 20 5 22 6 C23 5 26 3 29 3 C29.5 4 29.5 7 29 9 C29 10 32 12 32 18 C32 25 30 30 16 30 C2 30 0 25 0 18 M3 20 C3 24 4 28 16 28 C28 28 29 24 29 20 C29 16 28 14 16 14 C4 14 3 16 3 20 M8 21 A1.5 2.5 0 0 0 13 21 A1.5 2.5 0 0 0 8 21 M24 21 A1.5 2.5 0 0 0 19 21 A1.5 2.5 0 0 0 24 21 z"></path></svg>
+          yenlanh.com</a>
+      </div>
+  </div>
+  
+  <div class="container mt4 mb4">
+    <div class="sm-col-6 mx-auto px3 sm-px4">
+  <p>Hehe! <strong>Khéo tay... thì hay làm. Cố lên!!</strong></p>
+  <p>Thỉnh thoảng có những nỗi buồn chẳng vơi, thế là mở máy tính ra code ngay lấy một trang về chủ đề nào đấy mà mình vừa bán nó được, mà lại vừa có ích cho người khác thì cũng là cái thú vui.</p>
+  <p><strong>Gia đình</strong> Nhiều người sao trọn vẹn, đứng ngoài hóng lại thấy vui, nên làm ké thêm vài sản phẩm mẫu web khác nhau để tăng thêm hương vị hạnh phúc.</p>
+  <p>Trang này được tài trợ hệ thống và vận hành bởi <a href="http://yenlanh.com">yenlanh.com</a>.</p>
+  <p><strong>Phạm Xuân Tiếp</strong> là tên kẻ đang làm trang này, có vấn đề gì thì phang cho hắn vài câu chửi xéo vào facebook ký tên ở dưới nhé.</p>
+  
+  <p>Thôi cảm ơn, xong rồi.</p>
+  
+  <p>Tiếp,<br/><a href="https://facebook.com/100035563570550">Facebook@Phạm Xuân Tiếp</a></p>
+  </div>
+  </div>
+
+</div>
